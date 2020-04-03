@@ -1,0 +1,17 @@
+int main()
+{
+while  (digital(0) == 0)
+if (analog (0) > 1600)
+{
+motor (0,90);
+motor (3,5);
+}
+else
+{
+motor (0,5);
+motor (3,90);
+}
+}
+ao();
+return 0;
+}
