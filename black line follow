@@ -1,0 +1,27 @@
+void turn_left();
+void turn_right();
+int main()
+{  
+while (digital(0) == 0) 
+{  
+if (analog(0) > 1600)
+{ 
+turn_right();
+} 
+else  
+{  
+turn_left();  
+}  
+}  
+ao(); 
+return 0;  
+}  
+void turn_right()  
+{  
+motor(0, 100); 
+motor(3, 100);  
+} 
+void turn_left()
+{ 
+motor(0, 10); 
+motor(3, 80);  
